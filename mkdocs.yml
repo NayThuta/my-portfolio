@@ -1,0 +1,31 @@
+site_name: Nay Thuta's Portfolio
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue grey
+    accent: blue
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.code.highlight
+    - content.code.show_language
+# Development server configuration
+dev_addr: localhost:8000
+watch: [docs, mkdocs.yml]
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Projects:
+    - Overview: projects.md
+    - Sustainable Irrigation System: projects/sustainable-irrigation-system.md
+    - WormBrews: projects/wormbrews.md
+    - Patient Sentiment Analysis: projects/patient-sentiment-analysis.md
+  - About Me: about.md
+  - Contact: contact.md
