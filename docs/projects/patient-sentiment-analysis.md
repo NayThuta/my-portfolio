@@ -121,14 +121,12 @@ This project successfully combined VADER scores, custom lexicons, TF-IDF, and XG
 
 ## **Download Project Resources**
 
-[⬇️ Download Presentation Slides (PDF)](../../res/aieba_slides.pdf)  
-Download the full presentation for additional details on sentiment analysis implementation.
+[⬇️ Download Presentation Slides (PDF)](/my-portfolio/res/aieba_slides.pdf)
 
-[⬇️ Download Power BI Dashboard (.pbix)](../../res/powerbi_dashboard.pbix)  
-Download the .pbix file to interact with the dashboard and explore data visualizations.
+[⬇️ Download Power BI Dashboard (.pbix)](/my-portfolio/res/powerbi_dashboard.pbix)
 
 ---
 
 <p align="center">
-  <a href="../">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
+  <a href="../index.html">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
 </p> 

@@ -156,5 +156,5 @@ Watch a real-life demonstration of the Sustainable Irrigation System prototype i
 ---
 
 <p align="center">
-  <a href="../">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
+  <a href="../index.html">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
 </p> 
