@@ -464,6 +464,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#business-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusion
@@ -473,9 +482,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#business-applications" class="md-nav__link">
+  <a href="#download-project-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Business Applications
+      Download Project Resources
     </span>
   </a>
   
@@ -649,6 +658,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#business-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusion
@@ -658,9 +676,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#business-applications" class="md-nav__link">
+  <a href="#download-project-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Business Applications
+      Download Project Resources
     </span>
   </a>
   
@@ -686,18 +704,20 @@
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/sentiment_analysis.jpg" alt="Sentiment Analysis Defined" style="max-width: 70%; height: auto;">
   <br>
-  <em>Figure: Sentiment Analysis Defined (Credit: Aim Technologies)</em>
+  <em>Figure: What is Sentiment Analysis about? (Credit: Aim Technologies)</em>
 </div>
 
-<h2 id="overview">Overview</h2>
-<p>This project analyzes patient sentiments from drug reviews, classifying them as positive, neutral, or negative using machine learning. I led data preparation and exploratory data analysis (EDA), reviewed and enhanced teammates’ work on pre-processing and model development, and designed a Power BI dashboard to visualize results for business insights. The project uses a dataset with 27,703 reviews from <a href="https://www.drugs.com">drugs.com</a>, sourced from <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>.</p>
-<h2 id="problem-statement">Problem Statement</h2>
-<p>Consumers frequently report their experiences with drugs and their side effects in online reviews, particularly on drugs.com. This creates an issue because it’s hard to understand these feelings (sentiments) without turning them into clear, actionable insights, which this project aims to do to support healthcare decisions.</p>
-<h2 id="data-collection">Data Collection</h2>
-<ul>
-<li><strong>Source</strong>: The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, available in clean versions (Arrow, JSON, CSV) from <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>, containing 27,703 reviews from <a href="https://www.drugs.com">drugs.com</a>.</li>
-</ul>
-<h2 id="data-preparation">Data Preparation</h2>
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>In the healthcare industry, understanding patient sentiment from drug reviews is critical yet challenging. This project addresses that by leveraging machine learning to classify sentiments as positive, neutral, or negative, transforming unstructured data into actionable insights.</p>
+<p>I spearheaded <a href="#data-preparation">data preparation</a> and <a href="#exploratory-data-analysis">exploratory data analysis (EDA)</a>, ensuring data quality and foundational insights. I also significantly enhanced pre-processing and model development efforts by reviewing and refining my teammates' contributions. My work culminated in designing a dynamic <a href="#power-bi-dashboard">Power BI dashboard</a>, enabling stakeholders to visualize key trends and inform critical healthcare decisions. The project utilized a comprehensive dataset of <strong>27,703 drug reviews</strong> from <a href="https://www.drugs.com">drugs.com</a>, sourced via <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>.</p>
+<hr />
+<h2 id="problem-statement"><strong>Problem Statement</strong></h2>
+<p>Consumers frequently report their experiences with drugs and their side effects in online reviews, particularly on drugs.com. This creates a significant challenge: it's difficult to systematically extract and understand these sentiments without converting them into clear, actionable insights. This project aimed to solve this by providing a robust sentiment analysis framework to support healthcare decisions.</p>
+<hr />
+<h2 id="data-collection"><strong>Data Collection</strong></h2>
+<p>The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, available in clean versions (Arrow, JSON, CSV) from <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>, containing 27,703 reviews from <a href="https://www.drugs.com">drugs.com</a>.</p>
+<hr />
+<h2 id="data-preparation"><strong>Data Preparation</strong></h2>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/1.png" alt="Dataset Overview" style="max-width: 90%; height: auto;">
   <br>
@@ -705,10 +725,11 @@
 </div>
 
 <ul>
-<li><strong>Loading and Initial Check</strong>: I loaded the dataset with <code>pd.read_csv('drug_review.csv', sep=',')</code>, a tool to read the data file, and checked its structure with <code>df.info()</code>, like opening a box of puzzle pieces to see what’s inside.</li>
-<li><strong>Cleaning</strong>: I standardized formats and removed extra bits with <code>df.loc[df['column'].isnull()]</code>, checking for missing data with <code>df.isnull().sum().values.sum()</code> and unique values with <code>df['drugName'].unique().tolist()</code> and <code>df['condition'].unique().tolist()</code>, ensuring the data is neat and usable.</li>
+<li><strong>Loading and Initial Check:</strong> I loaded the dataset using <code>pd.read_csv('drug_review.csv', sep=',')</code>. An initial inspection with <code>df.head()</code> and <code>df.info()</code> revealed its structure, including columns like <code>drugName</code>, <code>condition</code>, <code>review</code>, and <code>rating</code>, and confirmed <strong>27,703 entries</strong> across 9 columns.</li>
+<li><strong>Cleaning:</strong>  I standardized formats and addressed missing data, confirming <strong>no missing values</strong> across the dataset with <code>df.isnull().sum()</code>. I also verified unique values for key categorical columns like <code>drugName</code> (2014 unique drugs) and <code>condition</code> (579 unique conditions) using <code>df.nunique()</code>, ensuring data integrity and usability. Duplicate rows were also handled to maintain a clean dataset.</li>
 </ul>
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<hr />
+<h2 id="exploratory-data-analysis"><strong>Exploratory Data Analysis</strong></h2>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/2.png" alt="Elbow Method" style="max-width: 90%; height: auto;">
   <br>
@@ -716,18 +737,18 @@
 </div>
 
 <ul>
-<li><strong>Initial Approach</strong>: I checked the optimal number of clusters with the elbow method using <code>wcss.append(KMeans(n_clusters=k, random_state=42).inertia_)</code> and plotted with <code>plt.plot(k_values, wcss, marker='o')</code>, a way to pick the best number of groups. </li>
-<li><strong>Clustering</strong>: I used K-means clustering with <code>KMeans(n_clusters=3, random_state=42)</code> on <code>sentiment_summary[['Negative', 'Neutral', 'Positive']]</code>, adjusted with <code>StandardScaler().fit_transform(X)</code>, to group similar reviews, think of this as sorting items into baskets based on patterns.</li>
-<li><strong>Clustering Insights</strong>: Cluster centroids (e.g., [0.1131492, 0.6688243, 0.1999081]) showed sentiment patterns, guiding further analysis.</li>
+<li><strong>Initial Approach (Elbow Method for Clustering):</strong> I checked the optimal number of clusters for sentiment patterns using the elbow method. The process involved calculating the Within-Cluster Sum of Squares (WCSS) with <code>wcss.append(KMeans(n_clusters=k, random_state=42).inertia_)</code> and plotting <code>plt.plot(k_values, wcss, marker='o')</code> to identify the optimal number of groups.</li>
+<li><strong>Clustering:</strong> K-means clustering was applied with <code>KMeans(n_clusters=3, random_state=42)</code> on the <code>sentiment_summary[['Negative', 'Neutral', 'Positive']]</code> features, which were first scaled using <code>StandardScaler().fit_transform(X)</code> to ensure fair weighting. This grouped similar reviews based on their sentiment distribution.</li>
+<li><strong>Clustering Insights:</strong> The cluster centroids, such as <code>[0.1131492, 0.6688243, 0.1999081]</code>, clearly demonstrated distinct sentiment patterns within the dataset, providing a basis for deeper analysis.</li>
 </ul>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/3.png" alt="Sentiment Spread" style="max-width: 90%; height: auto;">
   <br>
-  <em>Figure: Distribution of Sentiment</em>
+  <em>Figure: Sentiment Distribution</em>
 </div>
 
 <ul>
-<li><strong>Sentiment Spread</strong>: I explored the data by grouping it with <code>sampled_reviews.groupby('rating', 'sentiment').size().unstack(fill_value=0)</code> and created charts with <code>sns.countplot(df['sentiment'])</code> to see how sentiments are spread, like mapping out the data’s story based on the clusters.</li>
+<li><strong>Sentiment Spread:</strong> I explored the distribution of sentiments by grouping data using <code>sampled_reviews.groupby('rating', 'sentiment').size().unstack(fill_value=0)</code> and visualized these distributions with <code>sns.countplot(df['sentiment'])</code>. This helped to map out the overall sentiment landscape of the reviews.</li>
 </ul>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/6.png" alt="Negative Word Cloud" style="max-width: 90%; height: auto;">
@@ -736,17 +757,19 @@
 </div>
 
 <ul>
-<li><strong>Word Clouds</strong>: I made word clouds with <code>WordCloud(width=900, height=400).generate(positive_reviews)</code> to highlight words like "take" and "side effect," acting like a fun word picture to spot trends.</li>
-<li><strong>Insights</strong>: The word clouds didn’t give clear insights, showing the need for better data cleaning, as terms like "take" appeared across all sentiments.</li>
+<li><strong>Word Clouds:</strong> Word clouds were generated using <code>WordCloud(width=900, height=400).generate([sentiment_type]_reviews)</code> to highlight prominent terms within different sentiment categories.</li>
+<li><strong>Insights from Word Clouds:</strong> While intended to provide quick insights, the initial word clouds revealed terms like "take" appearing across all sentiment categories. This highlighted an important discovery: the need for more advanced, domain-specific text cleaning and filtering to extract truly meaningful insights beyond common words.</li>
 </ul>
-<h2 id="data-pre-processing">Data Pre-processing</h2>
+<hr />
+<h2 id="data-pre-processing"><strong>Data Pre-processing</strong></h2>
 <ul>
-<li><strong>Text Cleaning</strong>: The team used an NLTK-based pipeline to clean text, turning it to lowercase with <code>str(text).lower()</code>, removing extra spaces with <code>re.sub(r'\r\s', ', ', text)</code>, and simplifying words with <code>WordNetLemmatizer()</code>, skipping common words from <code>nltk.corpus.stopwords.words('english')</code>. This tidies up messy notes to focus on key points.</li>
-<li><strong>Sentiment Labeling</strong>: The team created <code>def label_sentiment(rating): if rating &gt; 7: return 'Positive' elif rating &gt; 4: return 'Neutral' else: return 'Negative'</code>, applying it with <code>df['sentiment'] = df['rating'].apply(label_sentiment)</code> to tag feelings based on ratings.</li>
-<li><strong>Custom Lexicon</strong>: The team built a lexicon from unigrams, bigrams, and trigrams (min_count=15) with <code>Counter(unigrams)</code> and <code>Counter(bigrams)</code>, scaling scores (-1 to +1) based on ratings, saved as "custom_vader_lexicon.txt”, like a custom dictionary to read emotions.</li>
-<li><strong>Feature Extraction</strong>: The team used <code>TfidfVectorizer(max_features=20000, ngram_range=(1, 2), stop_words='english')</code> for TF-IDF, added VADER scores with <code>hstack</code>, and balanced data with <code>SMOTE(random_state=42)</code>, turning text into numbers and ensuring fair representation.</li>
+<li><strong>Text Cleaning:</strong> The team implemented an NLTK-based pipeline to clean raw text. This involved converting text to lowercase with <code>str(text).lower()</code>, removing extra spaces and special characters with <code>re.sub(r'\r\s', ', ', text)</code>, and simplifying words using <code>WordNetLemmatizer()</code>. Common English stopwords from <code>nltk.corpus.stopwords.words('english')</code> were also removed to focus on significant terms.</li>
+<li><strong>Sentiment Labeling:</strong> A custom function <code>def label_sentiment(rating): if rating &gt; 7: return 'Positive' elif rating &gt; 4: return 'Neutral' else: return 'Negative'</code> was applied to the <code>rating</code> column, creating a <code>sentiment</code> column with categorized labels. This transformation was applied using <code>df['sentiment'] = df['rating'].apply(label_sentiment)</code>.</li>
+<li><strong>Custom Lexicon:</strong> A custom VADER lexicon was built from unigrams, bigrams, and trigrams (with <code>min_count=15</code>) using <code>Counter(unigrams)</code> and <code>Counter(bigrams)</code>. This lexicon's scores, scaled from -1 to +1 based on ratings, were saved as "custom_vader_lexicon.txt", acting as a specialized dictionary for sentiment interpretation.</li>
+<li><strong>Feature Extraction:</strong> Text data was transformed into numerical features using <code>TfidfVectorizer(max_features=20000, ngram_range=(1, 2), stop_words='english')</code>. VADER sentiment scores were then horizontally stacked (<code>hstack</code>) with the TF-IDF features. To address class imbalance, <code>SMOTE(random_state=42)</code> was employed, ensuring balanced representation for effective model training.</li>
 </ul>
-<h2 id="model-development">Model Development</h2>
+<hr />
+<h2 id="model-development"><strong>Model Development</strong></h2>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/4.png" alt="Why XGBoost was chosen" style="max-width: 90%; height: auto;">
   <br>
@@ -754,36 +777,46 @@
 </div>
 
 <ul>
-<li><strong>Models</strong>: The team chose XGBoost, tuning it with <code>RandomizedSearchCV</code> for hyperparameters, think of this as tweaking a recipe to get the best sentiment predictions.</li>
-<li><strong>Evaluation</strong>: The team evaluated the XGBoost model with <code>classification_report</code>, ensuring it worked well across sentiments, like testing a recipe for all tastes.</li>
+<li><strong>Models:</strong> XGBoost was selected as the primary model due to its performance capabilities. Hyperparameter tuning was performed using <code>RandomizedSearchCV</code> to optimize its predictive accuracy for sentiment classification.</li>
+<li><strong>Evaluation:</strong> The XGBoost model's performance was thoroughly evaluated using <code>classification_report</code>, confirming its effectiveness across all sentiment categories and ensuring robust predictions</li>
 </ul>
-<h2 id="prediction-and-deployment">Prediction and Deployment</h2>
+<hr />
+<h2 id="prediction-and-deployment"><strong>Prediction and Deployment</strong></h2>
 <ul>
-<li><strong>New Data</strong>: The model was applied to "new_drug_reviews.tsv" with the same cleaning, using a new lexicon "custom_vader_lexicons.txt", and saved predictions to "predicted_sentiments.csv”, like using the recipe on new ingredients.</li>
-<li><strong>Output</strong>: The pipeline includes saved model "improved_xgboost_model.pkl" and vectorizer "improved_tfidf_vectorizer.pkl", ready for wider use, like sharing a finished cookbook.</li>
+<li><strong>New Data Appplication:</strong> The trained model was applied to a new dataset, <code>new_drug_reviews.tsv</code>, undergoing the same cleaning and feature extraction processes, including the use of the <code>custom_vader_lexicons.txt</code>. Predictions were then saved to <code>predicted_sentiments.csv</code>.</li>
+<li><strong>Output:</strong> The final pipeline includes the saved model (<code>improved_xgboost_model.pkl</code>) and the TF-IDF vectorizer (<code>improved_tfidf_vectorizer.pkl</code>), making the solution ready for broader application.</li>
 </ul>
-<h2 id="power-bi-dashboard">Power BI Dashboard</h2>
+<hr />
+<h2 id="power-bi-dashboard"><strong>Power BI Dashboard</strong></h2>
 <div style="text-align: center; padding: 20px 0;">
   <img src="/res/5.png" alt="Real World Applications" style="max-width: 90%; height: auto;">
   <br>
-  <em>Figure: How we can use our model</em>
+  <em>Figure: Interactive dashboard for pharmaceutical companies</em>
 </div>
 
 <ul>
-<li><strong>Design</strong>: I created a dashboard with tree charts for top 5 conditions and drugs, bar charts for trends (e.g., Q1 2017).</li>
-<li><strong>Use Cases</strong>: Supports customer feedback analysis, brand reputation management, and product improvement by spotting trends.</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>The project combines VADER scores, custom lexicons, TF-IDF, and XGBoost to analyze reviews, addressing imbalances with SMOTE and tuning for accuracy. It offers a scalable solution for real-world use.</p>
-<h2 id="business-applications">Business Applications</h2>
-<ul>
-<li><strong>Customer Feedback Analysis</strong>: Understand sentiments from reviews to improve patient experiences.</li>
-<li><strong>Brand Reputation Management</strong>: Monitor and respond to public perceptions of drugs.</li>
-<li><strong>Product Improvement</strong>: Identify liked or disliked features for enhancements.</li>
+<li><strong>Design:</strong> I designed an interactive Power BI dashboard utilizing the predicted dataset (<code>predicted_sentiments.csv</code>) from the model applied to <code>new_drug_reviews.tsv</code>. This dashboard features tree charts for the top 5 conditions and drugs, alongside bar charts illustrating sentiment trends (e.g., Q1 2017).</li>
+<li><strong>Use Cases:</strong> This dashboard serves as a powerful tool to support customer feedback analysis, enhance brand reputation management, and drive product improvement initiatives by visualizing key sentiment trends and patterns derived from the predicted dataset.</li>
 </ul>
 <hr />
+<h2 id="business-applications"><strong>Business Applications</strong></h2>
+<ul>
+<li><strong>Customer Feedback Analysis:</strong> Gain deeper insights into patient experiences from reviews to continuously improve services and drug efficacy.</li>
+<li><strong>Brand Reputation Management:</strong> Proactively monitor and respond to public perceptions of drugs, safeguarding and enhancing brand image.</li>
+<li><strong>Product Improvement:</strong> Identify specific features or aspects of drugs that are consistently liked or disliked, guiding targeted product enhancements and development.</li>
+</ul>
+<hr />
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>This project successfully combined VADER scores, custom lexicons, TF-IDF, and XGBoost to perform comprehensive sentiment analysis on drug reviews. It effectively addressed data imbalances using SMOTE and rigorously tuned models for optimal accuracy. The scalable solution provides significant real-world applicability for patient sentiment understanding.</p>
+<hr />
+<h2 id="download-project-resources"><strong>Download Project Resources</strong></h2>
+<p><a href="/res/aieba_slides.pdf">⬇️ Download Presentation Slides (PDF)</a><br />
+Download the full presentation for additional details on sentiment analysis implementation.</p>
+<p><a href="/res/powerbi_dashboard.pbix">⬇️ Download Power BI Dashboard (.pbix)</a><br />
+Download the .pbix file to interact with the dashboard and explore data visualizations.</p>
+<hr />
 <p align="center">
-  <a href="/projects/">← Back to Projects</a> | <a href="#top">↑ Back to Top</a>
+  <a href="/projects/">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
 </p>
 
 
