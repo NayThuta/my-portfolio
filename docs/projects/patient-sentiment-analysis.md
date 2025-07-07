@@ -1,7 +1,7 @@
 # Patient Sentiment Analysis Project
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/sentiment_analysis.jpg" alt="Sentiment Analysis Defined" style="max-width: 70%; height: auto;">
+  <img src="../../res/sentiment_analysis.jpg" alt="Sentiment Analysis Defined" style="max-width: 70%; height: auto;">
   <br>
   <em>Figure: What is Sentiment Analysis about? (Credit: Aim Technologies)</em>
 </div>
@@ -26,7 +26,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 ## **Data Preparation**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/1.png" alt="Dataset Overview" style="max-width: 90%; height: auto;">
+  <img src="../../res/1.png" alt="Dataset Overview" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Overview of the Dataset (Credit: Aryan Qusyairi)</em>
 </div>
@@ -39,7 +39,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 ## **Exploratory Data Analysis**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/2.png" alt="Elbow Method" style="max-width: 90%; height: auto;">
+  <img src="../../res/2.png" alt="Elbow Method" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Demonstration of the Elbow Method</em>
 </div>
@@ -49,7 +49,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 - **Clustering Insights:** The cluster centroids, such as `[0.1131492, 0.6688243, 0.1999081]`, clearly demonstrated distinct sentiment patterns within the dataset, providing a basis for deeper analysis.
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/3.png" alt="Sentiment Spread" style="max-width: 90%; height: auto;">
+  <img src="../../res/3.png" alt="Sentiment Spread" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Sentiment Distribution</em>
 </div>
@@ -57,7 +57,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 - **Sentiment Spread:** I explored the distribution of sentiments by grouping data using `sampled_reviews.groupby('rating', 'sentiment').size().unstack(fill_value=0)` and visualized these distributions with `sns.countplot(df['sentiment'])`. This helped to map out the overall sentiment landscape of the reviews.
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/6.png" alt="Negative Word Cloud" style="max-width: 90%; height: auto;">
+  <img src="../../res/6.png" alt="Negative Word Cloud" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Word Cloud Example for Negative Sentiment</em>
 </div>
@@ -78,7 +78,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 ## **Model Development**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/4.png" alt="Why XGBoost was chosen" style="max-width: 90%; height: auto;">
+  <img src="../../res/4.png" alt="Why XGBoost was chosen" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Why we chose XGBoost (Credit: Joseph Wong)</em>
 </div>
@@ -97,7 +97,7 @@ The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, avail
 ## **Power BI Dashboard**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/5.png" alt="Real World Applications" style="max-width: 90%; height: auto;">
+  <img src="../../res/5.png" alt="Real World Applications" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Interactive dashboard for pharmaceutical companies</em>
 </div>

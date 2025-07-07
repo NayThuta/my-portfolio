@@ -1,7 +1,7 @@
 # **Sustainable Irrigation System**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/contrast.jpg" alt="Contrast Between Monsoons and Drought" style="max-width: 60%; height: auto;">
+  <img src="../../res/contrast.jpg" alt="Contrast Between Monsoons and Drought" style="max-width: 60%; height: auto;">
   <br>
   <em>Figure: Contrast between wet monsoons and drought-struck summers in third-world farms, addressed by our solution.</em>
 </div>
@@ -15,7 +15,7 @@ In regions like Southeast Asia and sub-Saharan Africa, third-world farmers face 
 
 ### **Hardware Design & Layout**
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/component_breakdown.png" alt="Component Breakdown of the Smart Irrigation System" style="max-width: 100%; height: auto;">
+  <img src="../../res/component_breakdown.png" alt="Component Breakdown of the Smart Irrigation System" style="max-width: 100%; height: auto;">
   <br>
   <em>Figure: Physical breakdown of the system components on the transparent board.</em>
 </div>
@@ -25,7 +25,7 @@ In regions like Southeast Asia and sub-Saharan Africa, third-world farmers face 
 - **Soldering and Assembly**: I hand-soldered components onto the brown PCB, ensuring secure and reliable connections under resource constraints.
 - **Wiring and Circuit Design**: 
     1. I developed an efficient circuit design, minimizing jumper wires by routing traces strategically.
-    2. My design reduced complexity and improved durability, aligning with the PIC18F4550’s pin configuration.
+    2. My design reduced complexity and improved durability, aligning with the PIC18F4550's pin configuration.
 
 ---
 
@@ -51,7 +51,7 @@ In regions like Southeast Asia and sub-Saharan Africa, third-world farmers face 
 
 ### **System Architecture**
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/sys_arc_sis.jpg" alt="System Architecture Diagram" style="max-width: 100%; height: auto;">
+  <img src="../../res/sys_arc_sis.jpg" alt="System Architecture Diagram" style="max-width: 100%; height: auto;">
   <br>
   <em>Figure: High-level system architecture for the smart irrigation system.</em>
 </div>
@@ -111,7 +111,7 @@ In regions like Southeast Asia and sub-Saharan Africa, third-world farmers face 
 The project successfully completed its intended scope, delivering a functional smart irrigation system prototype tailored for third-world farming communities. This milestone reflects the team's ability to design, assemble, and test a solution despite resource constraints, with my hardware layout and PCB design playing a key role in its realization.
 
 ### **Addressing Specific Needs**
-- **Monsoon Rainfall Management**: The system’s rain sensor (connected to RB1) detects heavy rainfall and reduces water flow, preventing waterlogging during monsoons. This ensures crops aren’t overwhelmed, a common issue for farmers with limited drainage infrastructure.
+- **Monsoon Rainfall Management**: The system's rain sensor (connected to RB1) detects heavy rainfall and reduces water flow, preventing waterlogging during monsoons. This ensures crops aren't overwhelmed, a common issue for farmers with limited drainage infrastructure.
 - **Drought Resilience**: During dry seasons, users can trigger pumps (RB2, RB3, RB6) via the master control button (RB0) to maintain soil moisture, addressing water scarcity with minimal manual effort.
 - **Affordability and Simplicity**: The minimized jumper wire design and component placement reduce production costs and maintenance needs, making it accessible for small-scale farmers.
 
@@ -125,7 +125,7 @@ The project successfully completed its intended scope, delivering a functional s
 
 This project was a pivotal learning experience that enhanced my technical and professional capabilities:
 
-- **Microcontroller and Embedded C Expertise**: Reviewing teammates’ embedded C code for the PIC18F4550 deepened my proficiency in microcontroller programming, enabling me to optimize firmware for system reliability and efficiency.
+- **Microcontroller and Embedded C Expertise**: Reviewing teammates' embedded C code for the PIC18F4550 deepened my proficiency in microcontroller programming, enabling me to optimize firmware for system reliability and efficiency.
 - **Circuit Analysis and Design**: Designing the PCB layout and soldering components strengthened my skills in circuit analysis and design, ensuring precise integration of sensors and actuators under resource constraints.
 - **AutoCAD and Laser Cutting**: Using AutoCAD to create precise system layouts and laser cutting the transparent board layout honed my ability to produce accurate, maintainable hardware designs tailored for rural use.
 - **Collaboration and Problem-Solving**: Coordinating with hardware and software teams sharpened my collaboration and problem-solving skills, allowing me to communicate technical concepts clearly and deliver solutions in challenging environments.
@@ -140,7 +140,7 @@ Watch a real-life demonstration of the Sustainable Irrigation System prototype i
 
 <div style="text-align: center; padding: 20px 0;">
   <video width="560" height="315" controls style="max-width: 100%; height: auto;">
-    <source src="/res/demo_subbed.mp4" type="video/mp4">
+    <source src="../../res/demo_subbed.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>

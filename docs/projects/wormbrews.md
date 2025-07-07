@@ -1,20 +1,20 @@
 # **WormBrews: Sustainable Fertilizer Startup**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/wormbrews_ad.png" alt="WormBrews Advertisement" style="max-width: 60%; height: auto;">
+  <img src="../../res/wormbrews_ad.png" alt="WormBrews Advertisement" style="max-width: 60%; height: auto;">
   <br>
   <em>Figure: WormBrews promotional banner. (Credit: Shamus Lim Kah Hwee)</em>
 </div>
 
 ## **Overview**
-WormBrews began as a vision by Group 3 (Leong Kai Wen, Nay Thuta, Samuel Toh Zheng Hao, Shamus Lim Kah Hwee) to create a multi-tiered vermicomposting kit addressing Singapore’s need for space-efficient, eco-friendly composting. My primary contributions include [market research](#market-research), [customer interviews](#customer-interviews), [market validation](#market-validation), and [competitor analysis](#competitor-analysis), all of which drove the project’s early development. Launched with enthusiasm, the project aimed to turn urban food waste into sustainable fertilizer.
+WormBrews began as a vision by Group 3 (Leong Kai Wen, Nay Thuta, Samuel Toh Zheng Hao, Shamus Lim Kah Hwee) to create a multi-tiered vermicomposting kit addressing Singapore's need for space-efficient, eco-friendly composting. My primary contributions include [market research](#market-research), [customer interviews](#customer-interviews), [market validation](#market-validation), and [competitor analysis](#competitor-analysis), all of which drove the project's early development. Launched with enthusiasm, the project aimed to turn urban food waste into sustainable fertilizer.
 
 ---
 
 ## **Product Features**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/Wormbrews_features.png" alt="WormBrews Features" style="max-width: 70%; height: auto;">
+  <img src="../../res/Wormbrews_features.png" alt="WormBrews Features" style="max-width: 70%; height: auto;">
   <br>
   <em>Figure: Key features and benefits of WormBrews fertilizer. (Credit: Leong Kai Wen)</em>
 </div>
@@ -29,7 +29,7 @@ WormBrews began as a vision by Group 3 (Leong Kai Wen, Nay Thuta, Samuel Toh Zhe
 ---
 
 ## **Customer Interviews**
-- **Methodology**: I conducted in-person interviews to assess the kit’s feasibility and desirability, asking, "What did they think of using a multi-tiered vermicomposting kit to reduce food waste and produce fertilizer?"
+- **Methodology**: I conducted in-person interviews to assess the kit's feasibility and desirability, asking, "What did they think of using a multi-tiered vermicomposting kit to reduce food waste and produce fertilizer?"
 - **Key Findings**: 
     1. 22.2% prioritized space efficiency and odor control, with positive notes on indoor usability.
     2. Some saw it as a "portable idea" for domestic use but not industrial scale, with confusion over functionality.
@@ -41,14 +41,14 @@ WormBrews began as a vision by Group 3 (Leong Kai Wen, Nay Thuta, Samuel Toh Zhe
 ## **Market Validation**
 - **Survey Results**: The 85.7% interest rate initially confirmed demand among urban Singaporeans.
 - **Interview Outcomes**: Supported niche appeal but highlighted scalability and understanding gaps.
-- **Feasibility**: Real-world input aligned with Singapore’s space constraints, yet raised doubts about widespread adoption.
+- **Feasibility**: Real-world input aligned with Singapore's space constraints, yet raised doubts about widespread adoption.
 
 ---
 
 ## **Competitor Analysis**
 
 <div style="text-align: center; padding: 20px 0;">
-  <img src="/res/competitors.png" alt="WormBrews Competitors" style="max-width: 90%; height: auto;">
+  <img src="../../res/competitors.png" alt="WormBrews Competitors" style="max-width: 90%; height: auto;">
   <br>
   <em>Figure: Direct Competitors to WormBrews </em>
 </div>
@@ -82,7 +82,7 @@ Watch an animated demonstration of the WormBrews vermiposting kit in action:
 
 <div style="text-align: center; padding: 20px 0;">
   <video width="560" height="315" controls style="max-width: 100%; height: auto;">
-    <source src="/res/wormbrews_demo.mp4" type="video/mp4">
+    <source src="../../res/wormbrews_demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
