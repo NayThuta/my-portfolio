@@ -139,19 +139,13 @@ These lessons have equipped me to tackle complex engineering and business challe
 Watch a real-life demonstration of the Sustainable Irrigation System prototype in action:
 
 <div style="text-align: center; padding: 20px 0;">
-  <video width="560" height="315" controls style="max-width: 100%; height: auto;">
+  <video width="590" height="320" controls style="max-width: 100%; height: auto;">
     <source src="../../res/demo_subbed.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br>
   <em> Video: Sustainable Irrigation System Project Demo (Credit: Wong Wen Hui).</em>
 </div>
-
-## **Future Enhancements**
-
-**Possible Improvements**: IoT for remote monitoring, machine learning for predictions, a mobile app, and solar power.
-
-**Scalability Considerations**: My modular approach supports expansion, standardized components, and varied configurations. 
 
 ---
 

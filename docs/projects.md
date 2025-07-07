@@ -1,20 +1,21 @@
 # Projects
 
-Welcome to my projects page! Here, you'll find a collection of my work in engineering, data analytics, and entrepreneurship. Each project highlights my ability to tackle complex problems using programming, hardware design, and business strategy.
+Welcome to my projects page! Here, I showcase my work in hardware engineering, data analytics, and entrepreneurship, demonstrating my ability to tackle complex challenges through technical expertise, innovative solutions, and collaborative teamwork. Each project highlights my skills in Python, microcontroller programming, data analytics, and business strategy, applied to real-world problems in agriculture, sustainability, and healthcare.
+
+---
 
 ## Featured Projects
 
 ### [Sustainable Irrigation System](projects/sustainable-irrigation-system.md)
 
 **Hardware Engineering & IoT**  
-A microcontroller-based smart irrigation system that optimizes water usage using real-time environmental feedback. My role focused on hardware design, PCB layout, and circuit optimization.
+Designed a microcontroller-based smart irrigation system to optimize water usage for third-world farmers facing monsoon rains and summer droughts. I led the hardware layout, PCB design, and circuit optimization, delivering a cost-effective, scalable prototype.
 
 **Key Achievements:**
 
-- Successfully completed a functional smart irrigation system prototype tailored for third-world farmers.
-- Achieved a modular design to adapt to heavy monsoon rains and severe summer droughts in regions like Southeast Asia and sub-Saharan Africa.
-- Enabled efficient water management with reduced manual intervention, addressing the needs of small-scale farmers with limited resources.
-- Demonstrated potential for scalability and durability through a reliable hardware layout, supporting sustainable agricultural practices.
+- Developed a functional prototype using the PIC18F4550 microcontroller, integrating rain and water level sensors for real-time environmental feedback.
+- Optimized PCB layout with minimal jumper wires, enhancing durability and affordability for small-scale farmers in regions like Southeast Asia and sub-Saharan Africa.
+- Enabled automated pump control and precision irrigation via PWM, reducing water waste and manual intervention.
 
 [View Project Details →](projects/sustainable-irrigation-system.md)
 
@@ -23,13 +24,13 @@ A microcontroller-based smart irrigation system that optimizes water usage using
 ### [Wormbrews: Sustainable Fertilizer Startup](projects/wormbrews.md)
 
 **Entrepreneurship & Environmental Innovation**  
-Co-founded a startup producing organic fertilizer from food waste using vermicomposting technology. Led technical development and business operations.
+Co-developed a multi-tiered vermicomposting kit to convert urban food waste into organic fertilizer in Singapore. I led market research, customer interviews, market validation, and competitor analysis to shape the project’s strategy.
 
 **Key Achievements:**
-- $15,000+ annual revenue
-- 2+ tons waste diverted monthly
-- 10+ restaurant partnerships
-- 300% revenue growth in 18 months
+
+- Identified strong market interest (85.7% from surveys) among urban households and schools, validating demand for space-efficient composting.
+- Conducted interviews revealing user priorities like odor control, leading to design refinements and educational content.
+- Analyzed competitors (e.g., WERMS. INC, Worm Factory), positioning WormBrews as an affordable, compact solution with recycled PET connectors.
 
 [View Project Details →](projects/wormbrews.md)
 
@@ -38,54 +39,22 @@ Co-founded a startup producing organic fertilizer from food waste using vermicom
 ### [Patient Sentiment Analysis for Pharma](projects/patient-sentiment-analysis.md)
 
 **Machine Learning & Healthcare Analytics**  
-Developed an ML system analyzing patient sentiment from clinical trials and social media to provide pharmaceutical companies with real-time insights.
+
+Built a machine learning system to classify patient sentiments from 27,703 drug reviews as positive, neutral, or negative. I spearheaded data preparation, exploratory data analysis (EDA), and designed an interactive Power BI dashboard for stakeholder insights.
 
 **Key Achievements:**
-- 87% sentiment classification accuracy
-- 10,000+ comments processed daily
-- 40% cost reduction for clients
-- HIPAA-compliant data processing
+
+- Cleaned and analyzed a large dataset from [drugs.com](https://www.drugs.com), ensuring data integrity for robust sentiment analysis.
+- Applied K-means clustering and reviewed XGBoost model development, enhancing predictive accuracy for sentiment classification.
+- Created a Power BI dashboard using the predicted dataset (`predicted_sentiments.csv`), visualizing trends for customer feedback and product improvement.
 
 [View Project Details →](projects/patient-sentiment-analysis.md)
 
 ---
 
-## Project Categories
-
-### 🏗️ **Hardware & IoT**
-- **Sustainable Irrigation System**: Smart agricultural technology with environmental sensors and automated control systems
-
-### 🌱 **Environmental Innovation**
-- **Wormbrews**: Circular economy solutions for food waste management and organic agriculture
-
-### 🤖 **Machine Learning & AI**
-- **Patient Sentiment Analysis**: Healthcare analytics and pharmaceutical insights using NLP and sentiment analysis
-
-## Technical Skills Demonstrated
-
-### Programming & Development
-- **Languages**: Python, C, JavaScript, SQL
-- **Frameworks**: FastAPI, React, TensorFlow, PyTorch
-- **Tools**: Docker, Kubernetes, AWS, Git
-
-### Hardware & Engineering
-- **Microcontrollers**: PIC18F4550, Arduino
-- **PCB Design**: Circuit layout, component placement, soldering
-- **Sensors**: Environmental monitoring, data acquisition
-
-### Data & Analytics
-- **Machine Learning**: NLP, sentiment analysis, predictive modeling
-- **Data Engineering**: ETL pipelines, real-time processing, data visualization
-- **Business Intelligence**: Dashboard development, KPI tracking
-
-### Business & Entrepreneurship
-- **Startup Development**: Business model design, market research, partnership building
-- **Project Management**: Cross-functional team leadership, stakeholder communication
-- **Sustainability**: Environmental impact assessment, circular economy solutions
-
 ## Get in Touch
 
-Interested in collaborating on similar projects or learning more about my work? Feel free to [contact me](contact.md) to discuss opportunities or ask questions about any of these projects.
+Ready to leverage my skills in project engineering, data analytics, and entrepreneurship for your team? I’m eager to explore career opportunities where I can apply my expertise in systems engineering, information technology, and business strategy to drive impactful solutions. [Contact me](contact.md) to discuss how I can contribute to your organization or to learn more about my projects.
 
 ---
 

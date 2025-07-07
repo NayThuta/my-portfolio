@@ -119,6 +119,20 @@ This project successfully combined VADER scores, custom lexicons, TF-IDF, and XG
 
 ---
 
+## **Personal Learning Points**
+
+This project significantly enhanced my technical and professional capabilities, aligning with my core skill set:
+
+- **Python Programming:** Utilizing pandas, numpy, seaborn, and scikit-learn for data cleaning, EDA, and model development strengthened my Python proficiency, enabling efficient manipulation and analysis of large datasets.
+- **Data Analytics and Sentiment Analysis:** Leading EDA and reviewing teammates’ code for sentiment labeling and feature extraction deepened my expertise in data analytics and sentiment analysis, allowing me to derive actionable insights from complex, unstructured text data.
+- **Predictive Modeling:** Implementing K-means clustering and contributing to XGBoost hyperparameter tuning honed my predictive modeling skills, equipping me to develop robust machine learning solutions for real-world challenges.
+- **Power BI and Data Storytelling:** Designing an interactive Power BI dashboard with the predicted dataset (predicted_sentiments.csv) enhanced my ability to create compelling visualizations, effectively communicating insights to stakeholders for healthcare decision-making.
+- **Collaboration and Problem-Solving:** Coordinating with teammates to refine preprocessing pipelines and address data imbalances sharpened my collaboration and problem-solving skills, preparing me for dynamic, team-oriented environments.
+
+These experiences have strengthened my ability to tackle data-driven challenges with technical precision, adaptability, and a collaborative mindset, aligning with my goals in data analytics and project engineering.
+
+---
+
 ## **Download Project Resources**
 
 [⬇️ Download Presentation Slides (PDF)](/my-portfolio/res/aieba_slides.pdf)
