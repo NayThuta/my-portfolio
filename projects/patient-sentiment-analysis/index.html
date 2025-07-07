@@ -1,0 +1,876 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../wormbrews/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Patient Sentiment Analysis - Nay Thuta's Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#patient-sentiment-analysis-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Nay Thuta&#39;s Portfolio" class="md-header__button md-logo" aria-label="Nay Thuta's Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nay Thuta's Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Patient Sentiment Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nay Thuta&#39;s Portfolio" class="md-nav__button md-logo" aria-label="Nay Thuta's Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Nay Thuta's Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sustainable-irrigation-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sustainable Irrigation System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wormbrews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WormBrews
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Patient Sentiment Analysis
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Patient Sentiment Analysis
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploratory Data Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Pre-processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prediction-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prediction and Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-bi-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power BI Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-project-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Project Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About Me
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Collection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploratory Data Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pre-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Pre-processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prediction-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prediction and Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-bi-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power BI Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-project-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Project Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="patient-sentiment-analysis-project">Patient Sentiment Analysis Project</h1>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/sentiment_analysis.jpg" alt="Sentiment Analysis Defined" style="max-width: 70%; height: auto;">
+  <br>
+  <em>Figure: What is Sentiment Analysis about? (Credit: Aim Technologies)</em>
+</div>
+
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>In the healthcare industry, understanding patient sentiment from drug reviews is critical yet challenging. This project addresses that by leveraging machine learning to classify sentiments as positive, neutral, or negative, transforming unstructured data into actionable insights.</p>
+<p>I spearheaded <a href="#data-preparation">data preparation</a> and <a href="#exploratory-data-analysis">exploratory data analysis (EDA)</a>, ensuring data quality and foundational insights. I also significantly enhanced pre-processing and model development efforts by reviewing and refining my teammates' contributions. My work culminated in designing a dynamic <a href="#power-bi-dashboard">Power BI dashboard</a>, enabling stakeholders to visualize key trends and inform critical healthcare decisions. The project utilized a comprehensive dataset of <strong>27,703 drug reviews</strong> from <a href="https://www.drugs.com">drugs.com</a>, sourced via <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>.</p>
+<hr />
+<h2 id="problem-statement"><strong>Problem Statement</strong></h2>
+<p>Consumers frequently report their experiences with drugs and their side effects in online reviews, particularly on drugs.com. This creates a significant challenge: it's difficult to systematically extract and understand these sentiments without converting them into clear, actionable insights. This project aimed to solve this by providing a robust sentiment analysis framework to support healthcare decisions.</p>
+<hr />
+<h2 id="data-collection"><strong>Data Collection</strong></h2>
+<p>The chosen dataset is the "Drug Review Dataset" by Mohamed Abdelwahab Ali, available in clean versions (Arrow, JSON, CSV) from <a href="https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview">Kaggle</a>, containing 27,703 reviews from <a href="https://www.drugs.com">drugs.com</a>.</p>
+<hr />
+<h2 id="data-preparation"><strong>Data Preparation</strong></h2>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/1.png" alt="Dataset Overview" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Overview of the Dataset (Credit: Aryan Qusyairi)</em>
+</div>
+
+<ul>
+<li><strong>Loading and Initial Check:</strong> I loaded the dataset using <code>pd.read_csv('drug_review.csv', sep=',')</code>. An initial inspection with <code>df.head()</code> and <code>df.info()</code> revealed its structure, including columns like <code>drugName</code>, <code>condition</code>, <code>review</code>, and <code>rating</code>, and confirmed <strong>27,703 entries</strong> across 9 columns.</li>
+<li><strong>Cleaning:</strong>  I standardized formats and addressed missing data, confirming <strong>no missing values</strong> across the dataset with <code>df.isnull().sum()</code>. I also verified unique values for key categorical columns like <code>drugName</code> (2014 unique drugs) and <code>condition</code> (579 unique conditions) using <code>df.nunique()</code>, ensuring data integrity and usability. Duplicate rows were also handled to maintain a clean dataset.</li>
+</ul>
+<hr />
+<h2 id="exploratory-data-analysis"><strong>Exploratory Data Analysis</strong></h2>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/2.png" alt="Elbow Method" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Demonstration of the Elbow Method</em>
+</div>
+
+<ul>
+<li><strong>Initial Approach (Elbow Method for Clustering):</strong> I checked the optimal number of clusters for sentiment patterns using the elbow method. The process involved calculating the Within-Cluster Sum of Squares (WCSS) with <code>wcss.append(KMeans(n_clusters=k, random_state=42).inertia_)</code> and plotting <code>plt.plot(k_values, wcss, marker='o')</code> to identify the optimal number of groups.</li>
+<li><strong>Clustering:</strong> K-means clustering was applied with <code>KMeans(n_clusters=3, random_state=42)</code> on the <code>sentiment_summary[['Negative', 'Neutral', 'Positive']]</code> features, which were first scaled using <code>StandardScaler().fit_transform(X)</code> to ensure fair weighting. This grouped similar reviews based on their sentiment distribution.</li>
+<li><strong>Clustering Insights:</strong> The cluster centroids, such as <code>[0.1131492, 0.6688243, 0.1999081]</code>, clearly demonstrated distinct sentiment patterns within the dataset, providing a basis for deeper analysis.</li>
+</ul>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/3.png" alt="Sentiment Spread" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Sentiment Distribution</em>
+</div>
+
+<ul>
+<li><strong>Sentiment Spread:</strong> I explored the distribution of sentiments by grouping data using <code>sampled_reviews.groupby('rating', 'sentiment').size().unstack(fill_value=0)</code> and visualized these distributions with <code>sns.countplot(df['sentiment'])</code>. This helped to map out the overall sentiment landscape of the reviews.</li>
+</ul>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/6.png" alt="Negative Word Cloud" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Word Cloud Example for Negative Sentiment</em>
+</div>
+
+<ul>
+<li><strong>Word Clouds:</strong> Word clouds were generated using <code>WordCloud(width=900, height=400).generate([sentiment_type]_reviews)</code> to highlight prominent terms within different sentiment categories.</li>
+<li><strong>Insights from Word Clouds:</strong> While intended to provide quick insights, the initial word clouds revealed terms like "take" appearing across all sentiment categories. This highlighted an important discovery: the need for more advanced, domain-specific text cleaning and filtering to extract truly meaningful insights beyond common words.</li>
+</ul>
+<hr />
+<h2 id="data-pre-processing"><strong>Data Pre-processing</strong></h2>
+<ul>
+<li><strong>Text Cleaning:</strong> The team implemented an NLTK-based pipeline to clean raw text. This involved converting text to lowercase with <code>str(text).lower()</code>, removing extra spaces and special characters with <code>re.sub(r'\r\s', ', ', text)</code>, and simplifying words using <code>WordNetLemmatizer()</code>. Common English stopwords from <code>nltk.corpus.stopwords.words('english')</code> were also removed to focus on significant terms.</li>
+<li><strong>Sentiment Labeling:</strong> A custom function <code>def label_sentiment(rating): if rating &gt; 7: return 'Positive' elif rating &gt; 4: return 'Neutral' else: return 'Negative'</code> was applied to the <code>rating</code> column, creating a <code>sentiment</code> column with categorized labels. This transformation was applied using <code>df['sentiment'] = df['rating'].apply(label_sentiment)</code>.</li>
+<li><strong>Custom Lexicon:</strong> A custom VADER lexicon was built from unigrams, bigrams, and trigrams (with <code>min_count=15</code>) using <code>Counter(unigrams)</code> and <code>Counter(bigrams)</code>. This lexicon's scores, scaled from -1 to +1 based on ratings, were saved as "custom_vader_lexicon.txt", acting as a specialized dictionary for sentiment interpretation.</li>
+<li><strong>Feature Extraction:</strong> Text data was transformed into numerical features using <code>TfidfVectorizer(max_features=20000, ngram_range=(1, 2), stop_words='english')</code>. VADER sentiment scores were then horizontally stacked (<code>hstack</code>) with the TF-IDF features. To address class imbalance, <code>SMOTE(random_state=42)</code> was employed, ensuring balanced representation for effective model training.</li>
+</ul>
+<hr />
+<h2 id="model-development"><strong>Model Development</strong></h2>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/4.png" alt="Why XGBoost was chosen" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Why we chose XGBoost (Credit: Joseph Wong)</em>
+</div>
+
+<ul>
+<li><strong>Models:</strong> XGBoost was selected as the primary model due to its performance capabilities. Hyperparameter tuning was performed using <code>RandomizedSearchCV</code> to optimize its predictive accuracy for sentiment classification.</li>
+<li><strong>Evaluation:</strong> The XGBoost model's performance was thoroughly evaluated using <code>classification_report</code>, confirming its effectiveness across all sentiment categories and ensuring robust predictions</li>
+</ul>
+<hr />
+<h2 id="prediction-and-deployment"><strong>Prediction and Deployment</strong></h2>
+<ul>
+<li><strong>New Data Appplication:</strong> The trained model was applied to a new dataset, <code>new_drug_reviews.tsv</code>, undergoing the same cleaning and feature extraction processes, including the use of the <code>custom_vader_lexicons.txt</code>. Predictions were then saved to <code>predicted_sentiments.csv</code>.</li>
+<li><strong>Output:</strong> The final pipeline includes the saved model (<code>improved_xgboost_model.pkl</code>) and the TF-IDF vectorizer (<code>improved_tfidf_vectorizer.pkl</code>), making the solution ready for broader application.</li>
+</ul>
+<hr />
+<h2 id="power-bi-dashboard"><strong>Power BI Dashboard</strong></h2>
+<div style="text-align: center; padding: 20px 0;">
+  <img src="/res/5.png" alt="Real World Applications" style="max-width: 90%; height: auto;">
+  <br>
+  <em>Figure: Interactive dashboard for pharmaceutical companies</em>
+</div>
+
+<ul>
+<li><strong>Design:</strong> I designed an interactive Power BI dashboard utilizing the predicted dataset (<code>predicted_sentiments.csv</code>) from the model applied to <code>new_drug_reviews.tsv</code>. This dashboard features tree charts for the top 5 conditions and drugs, alongside bar charts illustrating sentiment trends (e.g., Q1 2017).</li>
+<li><strong>Use Cases:</strong> This dashboard serves as a powerful tool to support customer feedback analysis, enhance brand reputation management, and drive product improvement initiatives by visualizing key sentiment trends and patterns derived from the predicted dataset.</li>
+</ul>
+<hr />
+<h2 id="business-applications"><strong>Business Applications</strong></h2>
+<ul>
+<li><strong>Customer Feedback Analysis:</strong> Gain deeper insights into patient experiences from reviews to continuously improve services and drug efficacy.</li>
+<li><strong>Brand Reputation Management:</strong> Proactively monitor and respond to public perceptions of drugs, safeguarding and enhancing brand image.</li>
+<li><strong>Product Improvement:</strong> Identify specific features or aspects of drugs that are consistently liked or disliked, guiding targeted product enhancements and development.</li>
+</ul>
+<hr />
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>This project successfully combined VADER scores, custom lexicons, TF-IDF, and XGBoost to perform comprehensive sentiment analysis on drug reviews. It effectively addressed data imbalances using SMOTE and rigorously tuned models for optimal accuracy. The scalable solution provides significant real-world applicability for patient sentiment understanding.</p>
+<hr />
+<h2 id="download-project-resources"><strong>Download Project Resources</strong></h2>
+<p><a href="/res/aieba_slides.pdf">⬇️ Download Presentation Slides (PDF)</a><br />
+Download the full presentation for additional details on sentiment analysis implementation.</p>
+<p><a href="/res/powerbi_dashboard.pbix">⬇️ Download Power BI Dashboard (.pbix)</a><br />
+Download the .pbix file to interact with the dashboard and explore data visualizations.</p>
+<hr />
+<p align="center">
+  <a href="/projects/">← Back to Projects</a><span style="padding: 0 5px;"></span>|<span style="padding: 0 5px;"></span><a href="#top">↑ Back to Top</a>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.code.highlight", "content.code.show_language"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
