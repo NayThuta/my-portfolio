@@ -6,9 +6,9 @@ Welcome to my projects page! Here, I showcase my work in hardware engineering, d
 
 ## Featured Projects
 
-### [Sustainable Irrigation System](projects/sustainable-irrigation-system.md)
+### [💧 Sustainable Irrigation System](projects/sustainable-irrigation-system.md)
 
-**Hardware Engineering & IoT**  
+**⚙️ Hardware Engineering & Embedded Systems**  
 Designed a microcontroller-based smart irrigation system to optimize water usage for third-world farmers facing monsoon rains and summer droughts. I led the hardware layout, PCB design, and circuit optimization, delivering a cost-effective, scalable prototype.
 
 **Key Achievements:**
@@ -21,9 +21,9 @@ Designed a microcontroller-based smart irrigation system to optimize water usage
 
 ---
 
-### [Wormbrews: Sustainable Fertilizer Startup](projects/wormbrews.md)
+### [🌱 Wormbrews: Sustainable Fertilizer Startup](projects/wormbrews.md)
 
-**Entrepreneurship & Environmental Innovation**  
+**💡 Entrepreneurship & Environmental Innovation**  
 Co-developed a multi-tiered vermicomposting kit to convert urban food waste into organic fertilizer in Singapore. I led market research, customer interviews, market validation, and competitor analysis to shape the project’s strategy.
 
 **Key Achievements:**
@@ -36,9 +36,9 @@ Co-developed a multi-tiered vermicomposting kit to convert urban food waste into
 
 ---
 
-### [Patient Sentiment Analysis for Pharma](projects/patient-sentiment-analysis.md)
+### [💊 Patient Sentiment Analysis for Pharma](projects/patient-sentiment-analysis.md)
 
-**Machine Learning & Healthcare Analytics**  
+**🧠 Machine Learning & Data Analytics**  
 
 Built a machine learning system to classify patient sentiments from 27,703 drug reviews as positive, neutral, or negative. I spearheaded data preparation, exploratory data analysis (EDA), and designed an interactive Power BI dashboard for stakeholder insights.
 
