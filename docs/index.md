@@ -1,8 +1,12 @@
-# **Bridging Engineering and Business for Impactful Solutions**
+# **Pivoting Problems into Progress**
 
-Hi, I'm Nay Thuta, an Engineering with Business graduate from Singapore Polytechnic. I specialize in blending technical expertise in **systems engineering**, **data analytics**, and **business strategy** to create innovative solutions for real-world challenges. My projects showcase my skills in **Project Engineering**, **Business Development**, and **Machine Learning**, applied to agriculture, sustainability, and healthcare.
+<p align="center">
+  <img src="res/poster.png" alt="Project Poster" width="400"/>
+</p>
 
-Explore my work to see how I’ve designed cost-effective hardware solutions, validated sustainable business models, and analyzed large datasets, all while driving collaboration and problem-solving. I’m eager to launch my career in engineering, delivering impactful results for your team.
+Hi, I'm Nay Thuta, an Engineering with Business graduate from Singapore Polytechnic. My core drive? **Pivoting Problems into Progress.** I leverage my expertise in **systems engineering**, **data analytics**, and **business strategy** to create innovative solutions for real-world challenges. My portfolio demonstrates a track record of quickly grasping complex systems , taking strong initiative to learn new domains, and delivering tangible results in **Project Engineering**, **Business Development**, and **Machine Learning**.
+
+Explore my work to see how I’ve designed, validated, and analyzed with a focus on collaborative problem-solving. I’m eager to launch my career in engineering, contributing my drive and multidisciplinary skills to your team.
 
 [⬇️ Download My Resume](res/resume.pdf)
 

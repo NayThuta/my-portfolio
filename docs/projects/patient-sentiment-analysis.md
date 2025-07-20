@@ -1,4 +1,4 @@
-# Patient Sentiment Analysis Project
+# **Patient Sentiment Analysis Project**
 
 <div style="text-align: center; padding: 20px 0;">
   <img src="../../res/sentiment_analysis.jpg" alt="Sentiment Analysis Defined" style="max-width: 70%; height: auto;">

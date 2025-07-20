@@ -3,14 +3,20 @@ site_url: https://naythuta.github.io/my-portfolio/
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: blue grey
-    accent: blue
-  features:
-    - content.code.copy
-    - content.code.annotate
-    - content.code.highlight
-    - content.code.show_language
+    - scheme: default
+      primary: '#201F4B'
+      accent: '#26A69A'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: '#201F4B'
+      accent: '#26A69A'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  logo: res/logo.png
+  favicon: res/logo.png
 # Development server configuration
 dev_addr: localhost:8000
 watch: [docs, mkdocs.yml]
@@ -30,3 +36,6 @@ nav:
     - Patient Sentiment Analysis: projects/patient-sentiment-analysis.md
   - About Me: about.md
   - Contact: contact.md
+
+extra_css:
+  - extra.css
