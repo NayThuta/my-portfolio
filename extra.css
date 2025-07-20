@@ -1,0 +1,74 @@
+/* Forcefully remove backgrounds from sidebar site title and all children */
+.md-nav__title,
+.md-nav__title * {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Forcefully remove backgrounds from header source area and all children */
+.md-header__source,
+.md-header__source * {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Remove any background from active nav item and all children */
+.md-nav__item--active,
+.md-nav__item--active *,
+.md-nav__link--active,
+.md-nav__link--active * {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Remove sidebar background color in both modes */
+[data-md-color-scheme="default"] .md-sidebar,
+[data-md-color-scheme="slate"] .md-sidebar {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+[data-md-color-scheme="default"] .md-header, 
+[data-md-color-scheme="default"] .md-header__inner {
+  background-color: #201F4B !important;
+}
+[data-md-color-scheme="default"] .md-nav__link--active, 
+[data-md-color-scheme="default"] .md-nav__link:focus, 
+[data-md-color-scheme="default"] .md-nav__link:hover {
+  color: #26A69A !important;
+  font-weight: bold;
+}
+
+[data-md-color-scheme="slate"] .md-header, 
+[data-md-color-scheme="slate"] .md-header__inner {
+  background-color: #201F4B !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active, 
+[data-md-color-scheme="slate"] .md-nav__link:focus, 
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #26A69A !important;
+  font-weight: bold;
+}
+
+:root {
+  --md-accent-fg-color: #26A69A;
+}
+
+.md-button--primary {
+  background-color: #26A69A !important;
+  color: #fff !important;
+}
+
+.md-header__button.md-logo img {
+  height: 48px !important;
+  width: auto !important;
+  padding: 4px 8px !important;
+} 
