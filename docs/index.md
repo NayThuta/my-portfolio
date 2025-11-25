@@ -8,7 +8,7 @@ Hi, I'm Nay Thuta, an Engineering with Business graduate from Singapore Polytech
 
 Explore my work to see how I’ve designed, validated, and analyzed with a focus on collaborative problem-solving. I’m eager to launch my career in engineering, contributing my drive and multidisciplinary skills to your team.
 
-[⬇️ Download My Resume](res/resume.pdf)
+[⬇️ Download My CV](res/CV.pdf)
 
 ---
 
@@ -24,7 +24,7 @@ Explore my work to see how I’ve designed, validated, and analyzed with a focus
 
 # **Get in Touch**
 
-Ready to bring my skills in programming, data analytics, and hardware design to your engineering team? I’m actively seeking entry-level roles as a **Project Engineer**, **Process Engineer**, or **Technical Sales Engineer** to contribute innovative solutions in Singapore’s dynamic job market. [Contact me](contact.md) to discuss how I can drive value for your organization, or [download my resume](res/resume.pdf) to explore my qualifications.
+Ready to bring my skills in programming, data analytics, and hardware design to your engineering team? I’m actively seeking entry-level roles as a **Project Engineer**, **Process Engineer**, or **Technical Sales Engineer** to contribute innovative solutions in Singapore’s dynamic job market. [Contact me](contact.md) to discuss how I can drive value for your organization, or [download my CV](res/CV.pdf) to explore my qualifications.
 
 ---
 
